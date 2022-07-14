@@ -1,5 +1,5 @@
-let num = [5,2,9,4];
+const num = [5,2,9,4];
 
-num = num.sort()
+num = num.sort();
 
-console.log (num)
+console.log (num);
