@@ -1,5 +1,8 @@
-const num = [5,2,9,4];
+const year = parseInt(prompt("Please write a year"))
 
-num = num.sort();
-
-console.log (num);
+if ((year % 4 == 0) && (year % 400 == 0) ){
+      alert(true);
+}
+else {
+      alert(false);
+}
