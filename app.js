@@ -1,14 +1,13 @@
-const arr = [1, -3, -4, 7, 8, 12];
-let even = [];
-let odd = [];
-console.log(arr)
+function word() {
 
-for(i=0; i < arr.length; i++){
-      if(arr[i] % 2 ===0 && arr[i]>i){
-            even.push(arr[i])
-      }else if(arr[i] % 2 !==0 && arr[i]>i){
-            odd.push(arr[i] )
+      for(i=0; i < arr.length; i++){
+            if(arr[i] !== arr[arr.length - 1 - i  ]){        
+                  alert(false);
+            }
+            else {
+                  alert(true) 
+            }break
       }
-};
-console.log(even)
-console.log(odd)
+      }
+      const arr = prompt('');  
+      console.log(word(arr));
