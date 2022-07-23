@@ -1,11 +1,11 @@
-function word() {
+function word(text) {
 
-      for(i=0; i < arr.length; i++){
-            if(arr[i] !== arr[arr.length - 1- i  ]){        
+      for(let i=0; i < text.length; i++){
+            if(text[i] !== text[text.length - 1- i  ]){        
                   return false;
             }
       }
       return true;
       }
-      const arr = 'hello';  
-      console.log(word(arr));
+      const text = 'hello';  
+      console.log(word(text));
