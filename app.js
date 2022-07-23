@@ -1,8 +1,14 @@
-const year = parseInt(prompt("Please write a year"))
+const arr = [1, -3, -4, 7, 8, 12];
+let even = [];
+let odd = [];
+console.log(arr)
 
-if ((year % 4 == 0) && (year % 400 == 0) ){
-      alert(true);
-}
-else {
-      alert(false);
-}
+for(i=0; i < arr.length; i++){
+      if(arr[i] % 2 ===0 && arr[i]>i){
+            even.push(arr[i])
+      }else if(arr[i] % 2 !==0 && arr[i]>i){
+            odd.push(arr[i] )
+      }
+};
+console.log(even)
+console.log(odd)
