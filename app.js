@@ -1,5 +1,5 @@
-function truncate_string(value){
-      return value.substring(0,5);
+function capitalize(value){
+      return value[0].toUpperCase() + value.substring(1);
   }
   const value = 'hello world';
-  console.log(truncate_string(value))
+  console.log(capitalize(value))
