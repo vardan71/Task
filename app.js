@@ -1,5 +1,5 @@
-function isBlank(value){
-      return value === '';
+function string_to_array(value){
+      return value.split();
   }
-  const value = 'hello';
-  console.log(isBlank(value))
+  const value = 'hello world';
+  console.log(string_to_array(value))
