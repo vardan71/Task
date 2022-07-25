@@ -1,5 +1,5 @@
-function isstring(value){
-      return  typeof value === 'string'
+function isBlank(value){
+      return value === '';
   }
   const value = 'hello';
-  console.log(isstring(value))
+  console.log(isBlank(value))
