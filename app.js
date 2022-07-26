@@ -1,18 +1,12 @@
-function isLowerCase(a) {
-      return a[0] !== a[0].toUpperCase();
-}
-function word(value) {
-      let words = value.split(' ')
-
-      for (let i = 0; i < words.length; i++) {
-            if (isLowerCase(words[i][0])) {
-                 words[i]= words[i].charAt(0).toUpperCase() + words[i].substring(1)
-            }
+function insert(text, addWord, position,) {
+      if (typeof (position) == 'undefined') {
+          position = 0;
       }
-      return words.join('')
-}
-
-
-console.log(word("JavaScript Exercises"));
-console.log(word("JavaScript exercises"));
-console.log(word("JavaScriptExercises"));
+      if (typeof (addWord) == 'undefined') {
+          addWord = '';
+      }
+      return text.substring(0, position) + addWord + text.substring(position)
+  }
+  console.log(insert('We are doing some exercises.'));
+  console.log(insert('We are doing some exercises.', 'JavaScript '));
+  console.log(insert('We are doing some exercises.', 'JavaScript ', 18));
