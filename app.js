@@ -1,11 +1,10 @@
-function arr(arrays) {
+let colors = ["Blue ", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow "];
+let ordNum = ["th", "st", "nd", "rd"];
 
-    let result = [];
-    for (let i = 0; i < arrays.length; i++) {
-        if (arrays[i]) {
-            result.push(arrays[i]);
-        }
+for (let i = 0; i < colors.length; i++) {
+    if (i < 3) {
+        console.log(i + 1 + ordNum[i + 1] + ' choice is ' + colors[i])
+    } else {
+        console.log(i + 1 + ordNum[0] + ' choice is ' + colors[i])
     }
-    return result;
-}
-console.log(arr([NaN, 0, 15, false, -22, '', undefined, 47, null ]));
+};
